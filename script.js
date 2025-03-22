@@ -51,4 +51,7 @@ function displayTask(){
         })
 }
 
+console.log(tasks);
+
+
 
