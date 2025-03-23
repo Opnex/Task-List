@@ -4,48 +4,92 @@
     box-sizing: border-box;
 }
 
-
 body {
-    font-family: Arial, sans-serif;
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 0 20px;
-  }
-  .input-container {
-    margin-bottom: 20px;
-  }
-  input,
-  select,
-  button {
-    margin: 5px;
-    padding: 5px;
-  }
-  .task-list {
-    list-style: none;
-    padding: 0;
-  }
-  .task-item {
-    padding: 10px;
-    margin: 5px 0;
-    background: green;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-  }
-  .task-item.completed {
-    background: #e0e0e0;
-    text-decoration: line-through;
-    color: #666;
-  }
-  .work {
-    border-left: 4px solid #ff0404;
-  }
-  .personal {
-    border-left: 4px solid #06f6e6;
-  }
-  .school {
-    border-left: 4px solid #00d0ff;
-  }
-  .task-item input {
-    margin-right: 10px;
-  }
+  font-family: 'Segoe UI', Arial, sans-serif;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  line-height: 1.8;
+  background: #f5f7fa;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.input-container {
+  margin-bottom: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input, select, button {
+  margin: 8px;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  cursor: cell;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #2a07f1;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  padding: 15px;
+  margin: 10px 0;
+  background: white;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.task-item:hover {
+  transform: translateY(-2px);
+}
+
+/* .task-item.completed {
+  background: #f8f9fa;
+  color: #888;
+  text-decoration: line-through;
+  opacity: 0.8;
+} */
+
+.work {
+  border-left: 5px solid #ff4444;
+  background: #fff5f5;
+}
+
+.personal {
+  border-left: 5px solid #c9cc00;
+  background: #f0fafa;
+}
+
+.school {
+  border-left: 5px solid #1e90ff;
+  background: #f0f8ff;
+}
+
+.task-item input {
+  margin-right: 15px;
+  width: 20px;
+  height: 20px;
+}
