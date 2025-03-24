@@ -1,8 +1,12 @@
+//Selection of HTML Element
 const taskInput = document.querySelector(".task-input")
 const categorySelect = document.querySelector(".categorySelect")
 const taskList = document.querySelector(".task-list")
 
+//An empty array to store all the tasks
 let tasks = [];
+
+//A function to add a new task
 function addTask(){
     const description = taskInput.value.trim();
 
@@ -34,7 +38,7 @@ function displayTask(){
 
     tasks.forEach( function(task,index) {
         const li = document.createElement("li")
-        li.className = `task-items ${task.category} ${task.completed ? "completd" : ""}`
+        li.className = `task-items ${task.category} ${task.completed ? "completed" : ""}`
         
         
         const dateString = task.dateAdded.toLocaleDateString("en-US", {
@@ -52,6 +56,5 @@ function displayTask(){
 }
 
 console.log(tasks);
-
 
 
